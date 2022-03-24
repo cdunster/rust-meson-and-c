@@ -10,15 +10,15 @@
         pkgs = nixpkgs.legacyPackages.${system};
       in
       {
-        devShell = pkgs.mkShell {
+        devShell = with pkgs; mkShell {
           buildInputs = [
-            pkgs.git
-            pkgs.gcc
-            pkgs.clang_12
-            pkgs.meson
-            pkgs.ninja
-            pkgs.rustup
-            pkgs.rust-analyzer
+            git
+            gcc
+            clang_12
+            meson
+            ninja
+            rustup
+            rust-analyzer
           ];
         };
       }
