@@ -19,6 +19,7 @@
             ninja
             rustup
             rust-analyzer
+            cargo-edit
           ];
         };
       }
