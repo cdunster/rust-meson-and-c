@@ -19,3 +19,9 @@ executable(
   link_with : rust_lib,
   dependencies : deps,
 )
+
+executable(
+  'only_c_code',
+  'src/main.c',
+  'src/greeting.c',
+)

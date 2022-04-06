@@ -1,10 +1,9 @@
 #include <stdio.h>
-
-// This is the Rust function to be called.
-void greet(void);
+#include "greeting.h"
 
 // Main entry point of the executable that will call Rust code.
-int main() {
+int main()
+{
+  printf("Hello from C code!\n");
   greet();
-  printf("Hello from C code!");
 }
