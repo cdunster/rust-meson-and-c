@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Configure",
+            "command": "meson",
+            "type": "shell",
+            "args": [
+                "setup",
+                "--buildtype=\"debug\"",
+                "build"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "Build",
+            "command": "meson",
+            "type": "shell",
+            "args": [
+                "compile",
+                "-C",
+                "build"
+            ],
+            "group": {
+                "kind": "build"
+            }
+        }
+    ]
+}
